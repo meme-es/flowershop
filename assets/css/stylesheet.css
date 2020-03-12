@@ -1,0 +1,701 @@
+/* resseting */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* General settings */
+
+body {
+  position: relative;
+  background-color: #eef2eb;
+}
+
+.offers,
+.work-gallery,
+.catalog,
+.reviews,
+footer {
+  padding: 25px 25px;
+}
+
+.reviews,
+.cover,
+.main-header,
+.work-gallery {
+  background-color: #62c312;
+  color: white;
+}
+
+.nav-left,
+.nav-left:hover {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+a,
+a:hover {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 8px 10px;
+}
+
+/* Headera and navbar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+}
+
+.nav-logo {
+  width: 25px;
+  height: 20px;
+  background-image: url(../images/logo.PNG);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.nav-links {
+  display: none;
+}
+
+.nav-icons {
+  list-style-type: none;
+  display: flex;
+}
+
+.icon-item {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.ham-menu {
+  margin-left: 0;
+  background-color: rgba(254, 254, 254, 0.2);
+  background-image: url(../images/ham-ico.png);
+}
+
+.heart-white {
+  background-color: rgba(254, 254, 254, 0.2);
+  background-image: url(../images/heart-white.png);
+}
+
+.cart-white {
+  background-color: rgba(216, 5, 90, 1);
+  background-image: url(../images/cart-white.png);
+}
+
+.ham-menu:hover,
+.heart-white:hover,
+.cart-white:hover {
+  padding: 0;
+  margin: 0;
+}
+
+.heart-white:hover,
+.cart-white:hover {
+  padding: 0;
+  margin-left: 10px;
+}
+
+.nav-text {
+  font-size: 18px;
+  margin-left: 10px;
+  width: 118px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Buttons */
+
+.btn-primary {
+  background-color: #d8055a;
+}
+
+.btn-secondary {
+  background-color: #62c312;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-primary:hover,
+.btn-secondary:hover {
+  border-radius: 25px;
+  padding: 8px 25px;
+}
+
+.btn-primary:hover {
+  background-color: #bf0041;
+}
+
+.btn-secondary:hover {
+  background-color: #49aa00;
+}
+
+/* Cover */
+
+.cover {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column-reverse;
+  height: calc(100vh - 58px);
+  transition: all 1s;
+}
+
+.inner-layer {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cover h1 {
+  font-size: 35px;
+  padding: 8px 0;
+}
+
+.cover p {
+  font-size: 23px;
+}
+
+.order-button {
+  padding: 28px 0;
+}
+
+.image-cover {
+  background-image: url(../images/rose-jar.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+}
+
+/* Offers */
+
+section header {
+  padding-bottom: 30px;
+}
+
+.catalog,
+.offers,
+footer {
+  color: black;
+  background-color: white;
+}
+
+.offer-item {
+  position: relative;
+  height: 400px;
+  background-color: #f9f9f9;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center 100px;
+  margin-bottom: 25px;
+}
+
+.img-01 {
+  background-image: url(../images/turkish-rose.png);
+}
+
+.img-02 {
+  background-image: url(../images/pink-flor.png);
+}
+
+.img-03 {
+  background-image: url(../images/assortment.png);
+}
+
+.cart-link {
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+  background-image: url(../images/cart-fucsia.png);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: 6px 6px;
+}
+
+.cart-link:hover {
+  background-color: #e0e0e0;
+  border-radius: 50px;
+}
+
+.offer-info {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.discount {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  color: white;
+  background-color: #62c312;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding-top: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Work gallery */
+
+.work-gallery .image {
+  height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+}
+
+.img-work-01 {
+  background-image: url(../images/bouquet-01.jfif);
+}
+
+.img-work-02 {
+  background-image: url(../images/bouquet-02.jpg);
+}
+
+.img-work-03 {
+  background-image: url(../images/bouquet-03.jfif);
+}
+
+/* Catalog */
+
+.catalog-item {
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+
+.image-container {
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.image-container:hover {
+  background-color: #e0e0e0;
+  padding: 20px;
+}
+
+.catalog-info {
+  padding: 20px;
+}
+
+.catalog-item .image {
+  height: 300px;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.cat-img-01 {
+  background-image: url(../images/catalog-colorful.png);
+}
+
+.cat-img-02 {
+  background-image: url(../images/catalog-lavander.png);
+}
+
+.cat-img-03 {
+  background-image: url(../images/catalog-orange.png);
+}
+
+.cat-img-04 {
+  background-image: url(../images/catalog-peachdreamer.png);
+}
+
+.cat-img-05 {
+  background-image: url(../images/catalog-tinyblue.png);
+}
+
+.cat-img-06 {
+  background-image: url(../images/catalog-tinypink.png);
+}
+
+.pices-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.pices {
+  text-align: center;
+  width: 100px;
+}
+
+.btn-pice {
+  display: inline-block;
+  padding: 3px 0;
+  color: black;
+  width: 100%;
+}
+
+.btn-pice:hover {
+  color: black;
+  background-color: #f1f1f1;
+  border-radius: 15px;
+  padding: 3px 0;
+}
+
+.default {
+  border: 1px solid #a4df5a;
+  border-radius: 15px;
+}
+
+.catalog-info h3 {
+  padding-bottom: 8px;
+}
+
+.buy {
+  padding-top: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.buy span {
+  padding-right: 5px;
+}
+
+.catalog-button {
+  display: flex;
+  justify-content: center;
+}
+
+/* Reviews */
+
+.reviewer-item {
+  background-color: white;
+  color: black;
+  margin-bottom: 20px;
+  padding: 30px;
+}
+
+.reviewer-info {
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  padding: 10px;
+}
+
+.reviewer-img {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  background-image: url(../images/profile-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.reviewer-01 {
+  background-image: url(../images/profile-01.jpg);
+}
+
+.reviewer-02 {
+  background-image: url(../images/profile-02.jpg);
+}
+
+.reviewer-meta {
+  padding-left: 14px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sub-title {
+  color: gray;
+  padding-bottom: 6px;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.social {
+  display: flex;
+  list-style-type: none;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.social-icon {
+  height: 16px;
+  width: 16px;
+  margin-right: 4px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.vk-icon {
+  background-image: url(../images/vkontacte-icon.png);
+}
+
+.fb-icon {
+  background-image: url(../images/facebook-icon.png);
+}
+
+.map {
+  width: 100%;
+  height: 200px;
+  background-image: url(../images/map.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.contacts {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.direction {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.direction p,
+.copy-payment p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  text-align: center;
+}
+
+.direction p {
+  font-size: 18px;
+}
+
+.footer-links {
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-links a {
+  color: black;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.payment-methods {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.payment-methods li {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  flex: 1;
+}
+
+.master-icon {
+  background-image: url(../images/mastercard-icon.png);
+}
+
+.visa-icon {
+  background-image: url(../images/visa-icon.png);
+}
+
+.Paypal-icon {
+  background-image: url(../images/paypal-icon.png);
+}
+
+.wallet-icon {
+  background-image: url(../images/ym-icon.png);
+}
+
+@media (min-width: 768px) {
+  .offers,
+  .work-gallery,
+  .catalog,
+  .reviews,
+  footer {
+    padding: 40px 75px;
+
+    /* transition: all 1s;
+    transition-timing-function: ease-in; */
+  }
+
+  .map {
+    height: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .cover,
+  .offers,
+  .work-gallery,
+  .catalog,
+  .reviews,
+  footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 100px;
+  }
+
+  nav {
+    padding: 20px 0;
+  }
+
+  .ham-menu {
+    display: none;
+  }
+
+  .nav-right {
+    display: flex;
+  }
+
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+  }
+
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+
+  /* cover */
+
+  .cover {
+    display: block;
+    position: relative;
+    height: 450px;
+  }
+
+  .image-cover {
+    position: absolute;
+    background-position: center;
+    bottom: 0;
+    right: 0;
+    width: 75%;
+  }
+
+  /* Offers */
+
+  .inner-layer {
+    align-items: flex-start;
+  }
+
+  .offers-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .img-01 {
+    grid-row: span 2;
+    margin-right: 20px;
+  }
+
+  .img-02,
+  .img-03 {
+    height: 188px;
+    background-position: 225px 25px;
+  }
+
+  .top {
+    margin-bottom: 20px;
+  }
+
+  /* Work gallery */
+
+  .work-gallery .image {
+    height: 250px;
+  }
+
+  /* Catalog */
+
+  .images {
+    display: flex;
+  }
+
+  .img-work-01 {
+    flex: 4;
+  }
+
+  .img-work-02 {
+    flex: 3;
+    margin-left: 20px;
+  }
+
+  .img-work-03 {
+    flex: 2;
+    margin-left: 20px;
+  }
+
+  .catalog-list {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    transition: all 1s;
+    transition-timing-function: ease-in;
+  }
+
+  .pices {
+    width: auto;
+    flex: 1;
+  }
+
+  /* Customer reviews */
+
+  .reviewer-list {
+    display: grid;
+    grid-template-columns: 1fr 20px 1fr;
+  }
+
+  /* footer */
+
+  .map {
+    height: 400px;
+  }
+
+  .button-container {
+    min-width: 150px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .contacts {
+    flex-direction: row;
+  }
+}
