@@ -1,16 +1,14 @@
-# Cloning Newsweek Web Page Using Bootsrap
+# Flowershop
 
-> This is the final project of the HTML and CSS course of the Microverse program, its objective is to put into practice all the knowledge acquired during the course: CSS grid, flexbox, positioning, fonts, design, good practices, among others.
+> This is the final project of the HTML and CSS course of the Microverse program, its objective is to put into practice all the knowledge acquired during the course: CSS grid, flexbox, positioning, typography, layots, design, good practices, and more.
 
 ![screenshot](./screenshot.png)
 
 The project template can be found [here](https://www.newsweek.com/), a design created by [Michael D on Dribbble](https://www.behance.net/altezzik).
 
-The URL of the Newsweek site is [here](https://www.newsweek.com/), according to the date, the style of the web page may vary.
-
 ## Built With
 
-- HTML,
+- HTML
 - CSS
 
 ## Live Demo

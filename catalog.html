@@ -1,113 +1,224 @@
-<section class="catalog bg-green">
-  <header><h2>Catalog</h2></header>
-  <div class="catalog-list">
-    <div class="catalog-item">
-      <a href="#" class="image-container">
-        <div class="image cat-img-01"></div>
-      </a>
-      <div class="love-full"></div>
-      <div class="catalog-info">
-        <h3>Colorful</h3>
-        <ul class="pices-list">
-          <li class="pices default"><a href="#" class="btn-pice"> 9 pcs.</a></li>
-          <li class="pices"><a href="#" class="btn-pice">15 pcs.</a></li>
-          <li class="pices"><a href="#" class="btn-pice">21 pcs.</a></li>
-        </ul>
-        <div class="buy">
-          <span>$49.99</span>
-          <a href="#" class="cart-link"></a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fleur flowers</title>
+</head>
+<body>
+<div class="container">
+  <header><h2>Catalog of colors</h2></header>
+  <div class="catalog-container">
+    <section class="customization">
+      <h2 class="x-title">Costum your flowers</h2>
+      <section class="range-price">
+        <h3>Price</h3>
+        <div class="bar-cont">
+          <span class="bar-gray"></span>
+          <span class="bar-green"></span>
+          <span class="circle left-circle"></span>
+          <span class="circle right-circle"></span>
+        </div>
+        <div class="r-prices">
+          <p>$20</p>
+          <p>$100</p>
+        </div>
+      </section>
+      <section class="choose-color">
+        <h3>Color</h3>
+        <form action="#">
+          <ul class="color-picker">
+            <li class="input-radio">
+              <input type="radio" checked="checked" name="radio">
+              <span class="a-color marron"></span>
+            </li>
+            <li class="input-radio">
+              <input type="radio" name="radio">
+              <span class="a-color mustard"></span>
+            </li>
+            <li class="input-radio">
+              <input type="radio" name="radio">
+              <span class="a-color purple"></span>
+            </li>
+            <li class="input-radio">
+              <input type="radio" name="radio">
+              <span class="a-color fuchsia"></span>
+            </li>
+            <li class="input-radio">
+              <input type="radio" name="radio">
+              <span class="a-color skyblue"></span>
+            </li>
+          </ul>  
+        </form>
+      </section>
+      <section class="occasion">
+        <h3>Occasion</h3>
+        <form action="#">
+          <ul class="delivery-mode check">
+            <li class="input-check">
+              <input type="radio" name="radio" checked="checked" >
+              <span class="a-mode"></span><p class="label">Maternity</p>
+            </li>
+            <li class="input-check">
+              <input type="radio" name="radio">
+              <span class="a-mode"></span><p class="label">Love</p>
+            </li>
+            <li class="input-check">
+              <input type="radio" name="radio" checked="checked" >
+              <span class="a-mode"></span><p class="label">Birthday</p>
+            </li>
+            <li class="input-check">
+              <input type="radio" name="radio">
+              <span class="a-mode"></span><p class="label">Compliment</p>
+            </li>
+            <li class="input-check">
+              <input type="radio" name="radio">
+              <span class="a-mode"></span><p class="label">Anniversary</p>
+            </li>
+          </ul>  
+        </form>
+      </section>
+      <section class="whom">
+        <h3>For whom</h3>
+        <form action="#">
+          <ul class="delivery-mode check">
+            <li class="input-check">
+              <input type="radio" name="radio" checked="checked" >
+              <span class="a-mode"></span><p class="label">Teacher/boss</p>
+            </li>
+            <li class="input-check">
+              <input type="radio" name="radio">
+              <span class="a-mode"></span><p class="label">Lover</p>
+            </li>
+            <li class="input-check">
+              <input type="radio" name="radio" checked="checked" >
+              <span class="a-mode"></span><p class="label">Kid</p>
+            </li>
+            <li class="input-check">
+              <input type="radio" name="radio">
+              <span class="a-mode"></span><p class="label">Colleague</p>
+            </li>
+            <li class="input-check">
+              <input type="radio" name="radio">
+              <span class="a-mode"></span><p class="label">Mom</p>
+            </li>
+          </ul>  
+        </form>
+      </section>
+    </section>
+  
+    <section class="cat">
+      <div class="catalog-list">
+        <div class="catalog-item">
+          <a href="#" class="image-container" onclick="loadPage('details.html')">
+            <div class="image cat-img-01"></div>
+          </a>
+          <div class="love-full"></div>
+          <div class="catalog-info">
+            <h3>Colorful</h3>
+            <ul class="pices-list">
+              <li class="pices default"><a href="#" class="btn-pice"> 9 pcs.</a></li>
+              <li class="pices"><a href="#" class="btn-pice">15 pcs.</a></li>
+              <li class="pices"><a href="#" class="btn-pice">21 pcs.</a></li>
+            </ul>
+            <div class="buy">
+              <span>$49.99</span>
+              <a href="#" class="cart-link"></a>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <a href="#" class="image-container" onclick="loadPage('details.html')">
+            <div class="image cat-img-02"></div>
+          </a>
+          <div class="love-full"></div>
+          <div class="catalog-info">
+            <h3>Lavander</h3>
+            <ul class="pices-list">
+              <li class="pices default"><a href="#" class="btn-pice"> 9 pcs.</a></li>
+              <li class="pices"><a href="#" class="btn-pice">15 pcs.</a></li>
+              <li class="pices"><a href="#" class="btn-pice">21 pcs.</a></li>
+            </ul>
+            <div class="buy">
+              <span>$34.99</span>
+              <a href="#" class="cart-link"></a>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <a href="#" class="image-container" onclick="loadPage('details.html')">
+            <div class="image cat-img-03"></div>
+          </a>
+          <div class="love-full"></div>
+          <div class="catalog-info">
+            <h3>Orange</h3>
+            <ul class="pices-list">
+              <li class="pices default"><a href="#" class="btn-pice"> 9 pcs.</a></li>
+              <li class="pices"><a href="#" class="btn-pice">15 pcs.</a></li>
+              <li class="pices"><a href="#" class="btn-pice">21 pcs.</a></li>
+            </ul>
+            <div class="buy">
+              <span>$32.99</span>
+              <a href="#" class="cart-link"></a>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <a href="#" class="image-container" onclick="loadPage('details.html')">
+            <div class="image cat-img-04"></div>
+          </a>
+          <div class="love-full"></div>
+          <div class="catalog-info">
+            <h3>Peach dreamer</h3>
+            <ul class="pices-list">
+              <li class="pices default"><a href="#" class="btn-pice"> 9 pcs.</a></li>
+              <li class="pices"><a href="#" class="btn-pice">15 pcs.</a></li>
+              <li class="pices"><a href="#" class="btn-pice">21 pcs.</a></li>
+            </ul>
+            <div class="buy">
+              <span>$25.99</span>
+              <a href="#" class="cart-link"></a>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <a href="#" class="image-container" onclick="loadPage('details.html')">
+            <div class="image cat-img-05"></div>
+          </a>
+          <div class="love-full"></div>
+          <div class="catalog-info">
+            <h3>Tiny blue</h3>
+            <ul class="pices-list">
+              <li class="pices default"><a href="#" class="btn-pice"> 9 pcs.</a></li>
+              <li class="pices"><a href="#" class="btn-pice">15 pcs.</a></li>
+              <li class="pices"><a href="#" class="btn-pice">21 pcs.</a></li>
+            </ul>
+            <div class="buy">
+              <span>$26.99</span>
+              <a href="#" class="cart-link"></a>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <a href="#" class="image-container" onclick="loadPage('details.html')">
+            <div class="image cat-img-06"></div>
+          </a>
+          <div class="love-full"></div>
+          <div class="catalog-info">
+            <h3>Tiny pink</h3>
+            <ul class="pices-list">
+              <li class="pices default"><a href="#" class="btn-pice"> 9 pcs.</a></li>
+              <li class="pices"><a href="#" class="btn-pice">15 pcs.</a></li>
+              <li class="pices"><a href="#" class="btn-pice">21 pcs.</a></li>
+            </ul>
+            <div class="buy">
+              <span>$29.99</span>
+              <a href="#" class="cart-link"></a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="catalog-item">
-      <a href="#" class="image-container">
-        <div class="image cat-img-02"></div>
-      </a>
-      <div class="love-full"></div>
-      <div class="catalog-info">
-        <h3>Lavander</h3>
-        <ul class="pices-list">
-          <li class="pices default"><a href="#" class="btn-pice"> 9 pcs.</a></li>
-          <li class="pices"><a href="#" class="btn-pice">15 pcs.</a></li>
-          <li class="pices"><a href="#" class="btn-pice">21 pcs.</a></li>
-        </ul>
-        <div class="buy">
-          <span>$34.99</span>
-          <a href="#" class="cart-link"></a>
-        </div>
-      </div>
-    </div>
-    <div class="catalog-item">
-      <a href="#" class="image-container">
-        <div class="image cat-img-03"></div>
-      </a>
-      <div class="love-full"></div>
-      <div class="catalog-info">
-        <h3>Orange</h3>
-        <ul class="pices-list">
-          <li class="pices default"><a href="#" class="btn-pice"> 9 pcs.</a></li>
-          <li class="pices"><a href="#" class="btn-pice">15 pcs.</a></li>
-          <li class="pices"><a href="#" class="btn-pice">21 pcs.</a></li>
-        </ul>
-        <div class="buy">
-          <span>$32.99</span>
-          <a href="#" class="cart-link"></a>
-        </div>
-      </div>
-    </div>
-    <div class="catalog-item">
-      <a href="#" class="image-container">
-        <div class="image cat-img-04"></div>
-      </a>
-      <div class="love-full"></div>
-      <div class="catalog-info">
-        <h3>Peach dreamer</h3>
-        <ul class="pices-list">
-          <li class="pices default"><a href="#" class="btn-pice"> 9 pcs.</a></li>
-          <li class="pices"><a href="#" class="btn-pice">15 pcs.</a></li>
-          <li class="pices"><a href="#" class="btn-pice">21 pcs.</a></li>
-        </ul>
-        <div class="buy">
-          <span>$25.99</span>
-          <a href="#" class="cart-link"></a>
-        </div>
-      </div>
-    </div>
-    <div class="catalog-item">
-      <a href="#" class="image-container">
-        <div class="image cat-img-05"></div>
-      </a>
-      <div class="love-full"></div>
-      <div class="catalog-info">
-        <h3>Tiny blue</h3>
-        <ul class="pices-list">
-          <li class="pices default"><a href="#" class="btn-pice"> 9 pcs.</a></li>
-          <li class="pices"><a href="#" class="btn-pice">15 pcs.</a></li>
-          <li class="pices"><a href="#" class="btn-pice">21 pcs.</a></li>
-        </ul>
-        <div class="buy">
-          <span>$26.99</span>
-          <a href="#" class="cart-link"></a>
-        </div>
-      </div>
-    </div>
-    <div class="catalog-item">
-      <a href="#" class="image-container">
-        <div class="image cat-img-06"></div>
-      </a>
-      <div class="love-full"></div>
-      <div class="catalog-info">
-        <h3>Tiny pink</h3>
-        <ul class="pices-list">
-          <li class="pices default"><a href="#" class="btn-pice"> 9 pcs.</a></li>
-          <li class="pices"><a href="#" class="btn-pice">15 pcs.</a></li>
-          <li class="pices"><a href="#" class="btn-pice">21 pcs.</a></li>
-        </ul>
-        <div class="buy">
-          <span>$29.99</span>
-          <a href="#" class="cart-link"></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section> 
+  </div> 
+</div>
+</body>
+</html>
