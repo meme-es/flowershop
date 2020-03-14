@@ -4,7 +4,7 @@
 
 ![screenshot](./screenshot.png)
 
-The project template can be found [here](https://www.newsweek.com/), a design created by [Michael D on Dribbble](https://www.behance.net/altezzik).
+You can find the basis of the project [here](https://www.behance.net/gallery/69329213/Flower-e-shop), a design created by [Michael D on Dribbble](https://www.behance.net/altezzik).
 
 ## Built With
 
@@ -13,7 +13,7 @@ The project template can be found [here](https://www.newsweek.com/), a design cr
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/meme-es/flowershop/develop/)
+[Live Demo Link](https://meme-es.github.io/flowershop/)
 
 ## Authors
 
