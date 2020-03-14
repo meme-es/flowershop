@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>Fleur flowers</title>
+  <link rel="icon" type="image/png" href="./assets/images/favicon2.png">
+  <link href="./assets/css/stylesheet.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header">
+    <nav>
+      <a href="index.html" class="nav-left" onclick="loadPage('home.html')">
+        <div class="nav-logo"></div>
+        <div class="nav-text">Fleur flowers</div>  
+      </a>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#">Work gallery</a></li>
+          <li><a href="#" onclick="loadPage('catalog.html')">Catalog</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+        <ul class="nav-icons">
+          <li><a href="#" class="icon-item ham-menu"></a></li>
+          <li><a href="#" class="icon-item heart-white"></a></li>
+          <li><a href="#" class="icon-item cart-white"></a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="content">
+  </main>
+
+  <footer>
+    <!-- <div class="map"></div> -->
+    <div class="contacts">
+      <div class="button-container">
+        <a href="#" class="btn-secondary">Subscribe</a>
+      </div>
+      <div class="direction">
+        <p>Lenin Avenue, 15</p>
+        <p>+7 (978) 654-32-10</p>
+        <p>fleurflowers@fleur.ru</p>  
+      </div>
+      <div class="footer-links">
+        <a href="#">Shipping and Returns</a>
+        <a href="#">Information about us</a>
+        <a href="#">Promotions and discounts</a>
+      </div>
+      <div class="copy-payment">
+        <p>	&copy; 2020, Flower shop «Fleur». All rights reserved</p>
+        <ul class="payment-methods">
+          <li class="master-icon"></li>
+          <li class="visa-icon"></li>
+          <li class="Paypal-icon"></li>
+          <li class="wallet-icon"></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.onload = loadPage('home.html');
+
+    function loadPage(page) {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("content").innerHTML =
+          this.responseText;
+        }
+      };
+      xhttp.open("GET", page, true);
+      xhttp.send();
+    }
+  </script>
+</body>
+</html>
